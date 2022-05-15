@@ -1,7 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-export default function Search({ cb }) {
+export default function Search({ cb, params }) {
     const [search, setSearch] = useState('');
+
+    useEffect(() => {
+        setSearch(params);
+    }, [params])
+
 
     const handleSubmit = () => {
         cb(search)

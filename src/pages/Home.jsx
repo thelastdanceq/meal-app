@@ -32,7 +32,7 @@ export default function Home() {
 
     return (
         <>
-            <Search cb={handleSearch} />
+            <Search cb={handleSearch} params={queryParams.get('category') || ""} />
             {isLoading ? <Preloader /> : (
                 <CategoryList categories={filteredCategories} />
             )}

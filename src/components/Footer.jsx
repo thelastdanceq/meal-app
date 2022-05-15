@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="footer-copyright">
                 <div className="container">
                     © {new Date().getFullYear()} Copyright Text
-                    <a className="grey-text text-lighten-4 right" href="https://thelastdanceq.github.io/fort-shop">Repo</a>
+                    <a className="grey-text text-lighten-4 right" href="https://github.com/thelastdanceq/meal-app">Repo</a>
                 </div>
             </div>
         </footer>
