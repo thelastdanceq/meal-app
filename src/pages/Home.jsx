@@ -19,7 +19,7 @@ export default function Home() {
                 return item.strCategory.toLowerCase().includes(queryParams.get('category').toLowerCase())
             }))
         }).then(() => setIsLoading(false));
-    }, [])
+    }, [queryParams])
 
     const handleSearch = (str) => {
         setFilteredCategories(
