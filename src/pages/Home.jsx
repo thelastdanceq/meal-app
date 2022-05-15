@@ -16,7 +16,7 @@ export default function Home() {
         getCategories().then(data => {
             setCatefories(data.categories);
             setFilteredCategories(data.categories.filter((item) => {
-                return item.strCategory.toLowerCase().includes(queryParams.get('category').toLowerCase())
+                return item.strCategory.toLowerCase().includes((queryParams.get('category') || "").toLowerCase())
             }))
         }).then(() => setIsLoading(false));
     }, [queryParams])
