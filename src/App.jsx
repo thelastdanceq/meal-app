@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div className="main">
-        <BrowserRouter>
+        <BrowserRouter basename="/meal-app">
 
           <Routes>
             <Route path="/" element={<Layout />}>
