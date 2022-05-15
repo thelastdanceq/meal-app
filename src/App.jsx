@@ -1,6 +1,6 @@
 
 import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 import Category from "./components/Category";
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div className="main">
-        <BrowserRouter basename="/meal-app">
+        <HashRouter basename="/meal-app">
 
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -25,7 +25,7 @@ function App() {
             </Route>
           </Routes>
 
-        </BrowserRouter>
+        </HashRouter>
       </div>
 
 
